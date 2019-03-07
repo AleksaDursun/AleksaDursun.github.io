@@ -143,7 +143,9 @@ h1{
     margin-bottom:0; 
     
 }
-
+h2{
+    margin-left:2%;
+}
 #carousel{
    
     background-color: #4a4e4d;
@@ -334,9 +336,9 @@ p.oneItem{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -351,7 +353,6 @@ p.oneItem{
     align-items: center;
 }
 .footer{
-   
     -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0;
@@ -365,9 +366,9 @@ p.oneItem{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
