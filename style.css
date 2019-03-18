@@ -147,31 +147,8 @@ h2{
     margin-left:2%;
 }
 #carousel{
-   
     background-color: #4a4e4d;
-    height: 100vh;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-align-content: space-around;
-    -ms-flex-line-pack: distribute;
-    align-content: space-around;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
 }
-
-
-
 p{
     padding-left: 2%;
     max-width: 95vw;
@@ -194,25 +171,12 @@ p{
         opacity: 1;
     }
 }
-.button{
-    z-index: 2;
-    width:45px;
-    height: 45px;
-    background: none;
-    border: none;
-    color:white;
-    font-size: 3em;
-    text-shadow: 0px 0px 7px #000000;
-    transition: all 300ms ease-in-out;
-    margin-top: -1.5%;
-}
-.button:hover{
-    transform: scale(0.95);
+.mainWrapper{
+    margin-top: 50%;
 }
 .content{
     width:100vw;
-    height:30vh;
-    padding-top: 12vh; 
+    padding-top:10%; 
    margin-bottom: 12vh;
 }
 .products{
@@ -303,7 +267,7 @@ p{
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
     color: #fff;
-    font-size: 3em;
+    font-size: 2.5em;
     position: absolute;
     text-align: center;
     cursor: pointer;
@@ -433,4 +397,13 @@ span.oneItem{
         display: none;
     }
 }
-
+@media screen and (min-width:1141px) and (max-width:1254px){
+    .mainWrapper{      
+        margin-top: 45%;
+    }
+}
+@media screen and (max-width:1140px){
+    .mainWrapper{      
+        margin-top: 50%;
+    }
+}
