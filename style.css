@@ -172,7 +172,7 @@ p{
     }
 }
 .mainWrapper{
-    margin-top: 50%;
+    margin-top: 40%;
 }
 .content{
     width:100vw;
@@ -324,9 +324,9 @@ p.oneItem{
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
 
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -343,16 +343,36 @@ p.oneItem{
     -webkit-align-content: stretch;
     -ms-flex-line-pack: stretch;
     align-content: stretch;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 .socialIcon{
     width:45px;
 }
 a[target='_blank']{
     margin: 5%;
-    transition: all 300ms ease-in-out;
+    transition: all 300ms 
+    ease-in-out;
+    color:#000;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 a[target='_blank']:hover{
     transform: scale(1.1);
@@ -405,5 +425,30 @@ span.oneItem{
 @media screen and (max-width:1140px){
     .mainWrapper{      
         margin-top: 50%;
+    }
+}
+@media screen and (max-width:600px){
+    .footerWrapper{
+        height: auto;    
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .footer{
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;      
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .contactLink{
+        display: none;
     }
 }

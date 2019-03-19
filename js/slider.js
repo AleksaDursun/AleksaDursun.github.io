@@ -1,14 +1,3 @@
-
-/* Function whitch shows and hides mobile navigation menu*/
-function Mobile()
-{
-    var x = document.getElementById("mobileNavigation");
-  if (x.style.display == "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
 var slideIndex = 0;
 carousel();
 /* Function whitch controls image change */
