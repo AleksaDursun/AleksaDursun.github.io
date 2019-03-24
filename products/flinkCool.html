@@ -13,19 +13,30 @@
 <div id="wrapper">
     <div id="headerNav">
         <h1><img src="../images/Logo flink/LogoWhite.png" alt="Flink logo" id="logo"></h1>
+        <a href="javascript:void(0);" class="mobileIcon" onclick="Mobile()">
+            <img src="../images/mobileMenu1.png" alt="MENU">
+        </a>
         <nav class="navigation">
-            <a href="../index.html#home" class="navItem">Home</a>
+            <a href="../index.html" class="navItem">Home</a>
             <a href="../index.html#proizvodi" class="navItem">Proizvodi</a>
             <a href="../index.html#oNama" class="navItem">O nama</a>
             <a href="#kontakt" class="navItem">Kontakt</a>
         </nav>
     </div>
+    <div id="mobileNavigation">
+        <nav class="mobileNav">
+            <a href="../index.html#home" class="navItem" onclick="Mobile();">Home</a>
+            <a href="../index.html#proizvodi" class="navItem" onclick="Mobile();">Proizvodi</a>
+            <a href="../index.html#oNama" class="navItem" onclick="Mobile();">O nama</a>
+            <a href="#kontakt" class="navItem" onclick="Mobile();">Kontakt</a>
+        </nav>
+    </div>
+    </div>
     <div class="product">
     <div id="mainPhoto">
         <img src="../images/productImages/image2.jpg" alt="flinkCool">
     </div>
-    <div class="specs">
-       
+    <div class="specs">  
         <h2> FLINK COOL</h2>
             <ul>
                 <li>Controls your air conditioning device via mobile app</li>
@@ -54,12 +65,15 @@
 <a name="kontakt"></a>
 <div class="footerWrapper">
     <footer class="footer">
-       <a  href='https://www.facebook.com' target="_blank"><img class="socialIcon" src="../images/icons/facebook-logo-button.png" alt="face"></a>
+       <a  href='https://www.facebook.com/flink.thermostat/?tn-str=k*F' target="_blank"><img class="socialIcon" src="../images/icons/facebook-logo-button.png" alt="face"><span class="contactLink">&nbspFlink</span> </a>
        <a  href='https://www.twitter.com' target="_blank"><img class="socialIcon" src="../images/icons/twitter-logo-button.png" alt="twi"></a>
-       <a href='https://www.instagram.com' target="_blank"><img  class="socialIcon" src="../images/icons/instagram-logo.png" alt="insta"></a>
-       <a  href='mailto:info@bsmart.ba' target="_blank"><img class="socialIcon" src="../images/icons/email.png" alt="mail"></a>
-    </footer>
+       <a href='https://www.instagram.com/flink.thermostat/?hl=en' target="_blank"><img  class="socialIcon" src="../images/icons/instagram-logo.png" alt="insta"><span class="contactLink">&nbspflink.thermostat</span></a>
+       <a  href='mailto:info@bsmart.ba?Subject:Hello' target="_blank"><img class="socialIcon" src="../images/icons/email.png" alt="mail"><span class="contactLink">&nbspinfo@bsmart.ba</span></a>
+    </footer>           
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.794011358187!2d18.309881314886788!3d43.81863194973646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758ca0f99d6bf3b%3A0x6f97362d8c61c461!2sInternational+Burch+University!5e0!3m2!1ssr!2sba!4v1551986829967" width="300" height="250" frameborder="0" style="border:0;" allowfullscreen id="map"></iframe>     
 </div>
 </div>
+<script type="text/javascript" src="../js/mobileNav.js" ></script>
+<script type="text/javascript" src="js/map.js"></script>
 </body>
 </html>
