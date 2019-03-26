@@ -8,6 +8,6 @@ function Mobile()
     document.getElementById('headerNav').style.backgroundColor="transparent";
   } else {
     x.style.display = "block";
-    document.getElementById('headerNav').style.backgroundColor="rgba(238,49,36,.8)";
+    document.getElementById('headerNav').style.backgroundColor='rgba(0,0,90,1)';
   }
 }

@@ -31,7 +31,7 @@ body{
     align-items: center;
     width:100vw;
     height: 7vh;
-    background-color: #ee3124;
+    background-color: rgba(0,0,90,1);
     position: fixed;
     top:0;
     left:0;
@@ -142,7 +142,7 @@ h1{
     z-index: 0;
     width: 100vw;
     height: 7vh;
-    background: rgba(238,49,36,.8);
+    background: rgba(0,0,90,1);
 }
 .product{
     display: -ms-flexbox;
