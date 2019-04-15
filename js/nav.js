@@ -22,7 +22,7 @@ window.onscroll=function()
             var x=document.getElementsByClassName('regularNav');
             for(var i=0;i<x.length;i++)
             {
-                x[i].style.color="rgba(0,0,120,1)";
+                x[i].style.color="rgba(0,0,90,1)";
             }
         }    
     }

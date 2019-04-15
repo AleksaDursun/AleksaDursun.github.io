@@ -11,15 +11,27 @@
 </head>
 <body>
 <div id="wrapper">
-    <div id="headerNav">
-        <h1><img src="../images/Logo flink/LogoWhite.png" alt="Flink logo" id="logo"></h1>
-        <nav class="navigation">
-            <a href="../index.html#home" class="navItem">Home</a>
-            <a href="../index.html#proizvodi" class="navItem">Proizvodi</a>
-            <a href="../index.html#oNama" class="navItem">O nama</a>
-            <a href="#kontakt" class="navItem">Kontakt</a>
-        </nav>
-    </div>
+        <div id="headerNav">
+                <h1><img src="../images/Logo flink/LogoWhite.png" alt="Flink logo" id="logo"></h1>
+                <a href="javascript:void(0);" class="mobileIcon" onclick="Mobile()">
+                    <img src="../images/mobileMenu1.png" alt="MENU">
+                </a>
+                <nav class="navigation">
+                    <a href="../index.html" class="navItem">Home</a>
+                    <a href="../index.html#proizvodi" class="navItem">Proizvodi</a>
+                    <a href="../index.html#oNama" class="navItem">O nama</a>
+                    <a href="#kontakt" class="navItem">Kontakt</a>
+                </nav>
+            </div>
+            <div id="mobileNavigation">
+                <nav class="mobileNav">
+                    <a href="../index.html#home" class="navItem" onclick="Mobile();">Home</a>
+                    <a href="../index.html#proizvodi" class="navItem" onclick="Mobile();">Proizvodi</a>
+                    <a href="../index.html#oNama" class="navItem" onclick="Mobile();">O nama</a>
+                    <a href="#kontakt" class="navItem" onclick="Mobile();">Kontakt</a>
+                </nav>
+            </div>
+            <div class="bgDiv"></div>
     <div class="product">
     <div id="mainPhoto">
         <img src="../images/productImages/image1.jpg" alt="flinkCool">
@@ -45,20 +57,23 @@
     </div>
 </div>
 <div id="download">
-<a class="downloadLink" href="#" download>Link</a>
-<a class="downloadLink" href="#" download>Link</a>
-<a class="downloadLink" href="#" download>Link</a>
-<a class="downloadLink" href="#" download>Link</a>
+<a class="downloadLink" href="../files/ft101/SupportFT101.pdf" download>Support</a>
+<a class="downloadLink" href="../files/ft101/UputstvoFT101.pdf" download>User Manual</a>
+<a class="downloadLink" href="../files/ft101/EC_Declaration_of_Conformity_FT101.pdf" download>Declaration of conformity</a>
+<a class="downloadLink" href="../files/ft101/FlyerFlink_01.pdf" download>Flyer</a>
 </div>
 <a name="kontakt"></a>
 <div class="footerWrapper">
-    <footer class="footer">
-       <a  href='https://www.facebook.com' target="_blank"><img class="socialIcon" src="../images/icons/facebook-logo-button.png" alt="face"></a>
-       <a  href='https://www.twitter.com' target="_blank"><img class="socialIcon" src="../images/icons/twitter-logo-button.png" alt="twi"></a>
-       <a href='https://www.instagram.com' target="_blank"><img  class="socialIcon" src="../images/icons/instagram-logo.png" alt="insta"></a>
-       <a  href='mailto:info@bsmart.ba' target="_blank"><img class="socialIcon" src="../images/icons/email.png" alt="mail"></a>
-    </footer>
+        <footer class="footer">
+           <a  href='https://www.facebook.com/flink.thermostat/?tn-str=k*F' target="_blank"><img class="socialIcon" src="../images/icons/facebook-logo-button.png" alt="face"><span class="contactLink">&nbspFlink</span> </a>
+           <a  href='https://www.linkedin.com/company/bsmartflink' target="_blank"><img class="socialIcon" src="../images/icons/linkedin.png" alt="linkedin"><span class="contactLink">&nbspbSmart</span></a>
+           <a href='https://www.instagram.com/flink.thermostat/?hl=en' target="_blank"><img  class="socialIcon" src="../images/icons/instagram-logo.png" alt="instagram"><span class="contactLink">&nbspflink.thermostat</span></a>
+           <a  href='mailto:info@bsmart.ba?Subject:Hello' target="_blank"><img class="socialIcon" src="../images/icons/email.png" alt="mail"><span class="contactLink">&nbspinfo@bsmart.ba</span></a>
+        </footer>           
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1921.3429939234136!2d18.310621399558816!3d43.819300756890875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758ca0f78c95791%3A0xa63b8be83635d7b!2sbSmart+d.o.o.!5e0!3m2!1sen!2sba!4v1555331438501!5m2!1sen!2sba" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>      
+    </div>
 </div>
-</div>
+<script type="text/javascript" src="../js/mobileNav.js" ></script>
+<script type="text/javascript" src="../js/map.js"></script>
 </body>
 </html>

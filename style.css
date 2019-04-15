@@ -156,6 +156,18 @@ p{
     max-width: 95vw;
 
 }
+.statement{
+    position: absolute;
+    font-weight: bold;
+    z-index: 5;
+    text-shadow: 0px 0px 5px #FFFFFF;
+    top:43%;
+    left:25%;
+    font-size: 2em;
+    width:50%;
+    text-align: center;
+    
+}
 .slide{
     display: none;
     position:absolute;
@@ -223,9 +235,115 @@ p{
     -ms-flex-item-align: auto;
     align-self: auto;
     width:50%;
+    
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .contentImg img{
-    width: 100%;
+    max-width: 100%;
+}
+.mainImg{
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width:45%;
+    min-width: 255px;
+    margin: 10px;
+}
+.mainImg img{
+    width:100%;
+}
+.sideImg{
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width:45%;
+    min-width: 255px;
+    height: 100%;
+}
+.sideImg img{
+    width:45%;
+    margin: 5px;
+    transition: all 300ms ease-in-out;
+}
+.sideImg img:hover{
+    transform:scale(1.3);
+}
+.materialboxdiv{
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.materialboxdiv img{
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width:20%;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 .products{
     display: -ms-flexbox;
@@ -293,6 +411,14 @@ p{
 .items:hover{
     transform: scale(1.02);
     filter: blur(100%);
+}
+.title{
+    font-size: 1.3em;
+    color: #000;
+    font-weight: bold;
+}
+.description{
+    color: #000;
 }
 .oneItem{
     -webkit-order: 0;
@@ -511,15 +637,31 @@ span.oneItem{
         align-self: auto;
         width:90%;
     }
+    
+   
 }
-@media screen and (min-width:1141px) and (max-width:1254px){
-    .mainWrapper{      
-        margin-top: 50%;
+@media screen and (min-width:320px) and (max-width:418px){
+    .statement{
+        top:11%;
+        font-size: 1em;
     }
 }
-@media screen and (max-width:1140px){
-    .mainWrapper{      
-        margin-top: 55%;
+@media screen and (min-width:419px) and (max-width:509px){
+    .statement{
+        top:11%;
+        font-size: 1.3em;
+    }
+    .materialboxdiv img{
+        width:50%;
+    }
+}
+@media screen and (min-width:510px) and (max-width:760px){
+    .statement{
+        top:20%;
+        font-size: 1.5em;
+    }
+    .materialboxdiv img{
+        width:40%;
     }
 }
 @media screen and (max-width:600px){
@@ -547,6 +689,30 @@ span.oneItem{
         display: none;
     }
 }
+@media screen and (min-width:761px) and (max-width:915px){
+    .statement{
+        top:30%;
+    }
+    .materialboxdiv img{
+        width:30%;
+    }
+}
+@media screen and (min-width:1141px) and (max-width:1254px){
+    .mainWrapper{      
+        margin-top: 50%;
+    }
+}
+@media screen and (max-width:1140px){
+    .mainWrapper{      
+        margin-top: 55%;
+    }
+    .contentImg{
+        -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    }
+}
+
 @media screen and (min-width:1470px){
     *{
         font-size: 1.1em;
