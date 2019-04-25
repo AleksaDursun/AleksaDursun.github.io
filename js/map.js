@@ -2,7 +2,7 @@ mapSize();
 //Function which makes google map responsive
 function mapSize()
 {
-    if(window.innerWidth>1470)
+    if(window.innerWidth>1900)
     {
         var map=document.getElementById("map");
         map.removeAttribute("width");

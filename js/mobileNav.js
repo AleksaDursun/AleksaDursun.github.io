@@ -13,12 +13,12 @@ function Mobile()
     document.getElementById('headerNav').style.backgroundColor="transparent";
     for (var i = 0; i < y.length; i++) 
     {
-      y[i].style.color="rgba(0,0,90,1)";   
+      y[i].style.color="rgb(0, 40, 120)";   
     }
   } 
   else 
   {
     x.style.display = "block";
-    document.getElementById('headerNav').style.backgroundColor='rgba(0,0,90,1)';
+    document.getElementById('headerNav').style.backgroundColor='rgb(0, 40, 120)';
   }
 }

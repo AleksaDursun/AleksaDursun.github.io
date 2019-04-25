@@ -35,12 +35,13 @@
                     </nav>
                 </div>
                 
-                <div id="carousel" class="fadein">              
-                    <span class="statement">EXPERIENCE A NEW LEVEL OF COMFORT, CONTROL OF ENERGY AND MONEY</span>          
+                <div id="carousel" class="fadein">     
                     <img src="images/CrouselImages/image1.jpg" alt="" class="slide" > 
                     <img src="images/CrouselImages/image2.jpg" alt="" class="slide" > 
                     <img src="images/CrouselImages/image3.jpg" alt="" class="slide" > 
                     <img src="images/CrouselImages/image4.jpg" alt="" class="slide" > 
+                    <img id="backImg" src="images/appImg/mainAppImg.jpg" alt="Background">
+                    <div id="transition"></div>
                 </div>
             </header>
         </div>
@@ -51,24 +52,41 @@
                 <div class="content">
                     <div class="contentText">
                         <h2>FLINK can save on your heating costs and make life more comfortable.</h2>
-                        <p>Replace your old thermostat with the Flink Thermostat and experience a new level of comfort and control while saving energy and costs.</p>
-                        <p>Compatible with 95% of heating systems.</p>
-                        <p>Every house and heating system is different, Flink  knows how to heat yours as efficiently as possible. Create a heating schedule with simple steps.</p>
-                        <h3>Smart Flink Thermostat</h3>
-                        <p>For those who want more control, the new Flink Smart Thermostat is available.
-                        Access each room or your boiler from anywhere, at any time via the link app on your phone. Easily check and adapt temperatures to your wishes.
-                        </p>
-                        <p><b>Together  we are protecting the environment, while saving up to 30% of your heating costs.</b>  </p>
+                        <div class="paragraph">
+                            <span class="icon"><img src="images/icons/thermostat.png" alt="Thermostat"></span>
+                            <p class="text">Replace your old thermostat with the Flink Thermostat and experience a new level of comfort and control while saving energy and costs.</p>
+                        </div>
+                        
+                            
+                        
+                        <div class="paragraph"> 
+                                <span class="icon"><img src="images/icons/home.png" alt="Home"></span>
+                            <p class="text">Every house and heating system is different, Flink  knows how to heat yours as efficiently as possible. Create a heating schedule with simple steps.</p>
+                        </div>
+                        
+                        <div class="paragraph">
+                                <span class="icon"><img src="images/icons/smartphone.png" alt="Smartphone"></span>
+                            <p class="text">For those who want more control, the new Flink Smart Thermostat is available.
+                            Access each room or your boiler from anywhere, at any time via the link app on your phone. Easily check and adapt temperatures to your wishes.
+                            </p>
+                        </div>
+                        <div class="paragraph">
+                                <span class="icon"><img src="images/icons/earth.png" alt="Smartphone"></span>
+                            <p class="text">Together  we are protecting the environment, while saving up to 30% of your heating costs.  </p>
+                        </div>
+                        <p class="text bold">Compatible with 95% of heating systems.</p>
+                        
                     </div>
                     <div class="contentImg">
                        <div class="mainImg">
-                           <img src="images/appImg/mainImg.jpg" alt="App Image" onclick="materialbox(4);">
+                           <img src="images/appImg/mainAppImg.jpg" alt="App Image">
                        </div>
                        <div class="sideImg">
-                           <img class="appImg" src="images/appImg/image1.jpg" alt="Login" onclick="materialbox(0);">
-                           <img class="appImg" src="images/appImg/image2.jpg" alt="Login" onclick="materialbox(1);">
-                           <img class="appImg" src="images/appImg/image3.jpg" alt="No device" onclick="materialbox(2);">
-                           <img class="appImg" src="images/appImg/image4.jpg" alt="Login" onclick="materialbox(3);">
+                           <img class="appImg" src="images/appImg/image1.jpg" alt="Login" id="1">
+                           <img class="appImg" src="images/appImg/image2.jpg" alt="Login" id="2" >
+                           <img class="appImg" src="images/appImg/image3.jpg" alt="No device" id="3" >
+                           <img class="appImg" src="images/appImg/image4.jpg" alt="Login" id="4" >
+                           <img class="appImg" src="images/appImg/mainImg.jpg" alt="Login" id="5" >
                            <div class="materialboxdiv" >
                                 <span class="close">×</span>
                                 <img  src="images/appImg/image1.jpg" alt="Login">
@@ -84,11 +102,11 @@
                            <div class="materialboxdiv" >
                                 <span class="close">×</span>
                                 <img  src="images/appImg/image4.jpg" alt="Login">
-                           </div>  
+                           </div>   
                            <div class="materialboxdiv" >
                                 <span class="close">×</span>
                                 <img  src="images/appImg/mainImg.jpg" alt="Login">
-                           </div>     
+                           </div>         
                            </div>
                        </div>
                     </div>
@@ -103,7 +121,7 @@
                             <img src="images/productImages/image1.jpg" alt="Slicica" class="oneItem">
                         
                             <span class="oneItem">LEARN MORE ></span>
-                            <span class="plus"><span class="plus_size">+</span><br>FT 100</span>
+                            <span class="plus"><span class="plusItem plusSize">+</span><span class="plusItem">FT 100</span></span>
                         </div>
                     </a>
                     
@@ -114,7 +132,8 @@
                                 <span class="description">Flink Cool</span>
                                 <img src="images/productImages/image2.jpg" alt="Slicica" class="oneItem">
                                 <span class="oneItem">LEARN MORE ></span>
-                                <span class="plus"><span class="plus_size">+</span><br>Flink Cool</span>
+                                <span class="plus"><span class="plusItem plusSize">+</span><span class="plusItem">Flink Cool
+                                </span></span>
                                 
                         </div>
                     </a>
@@ -126,7 +145,18 @@
                                 <img src="images/productImages/image3.jpg" alt="Slicica" class="oneItem">
                                 
                                 <span class="oneItem"> LEARN MORE ></span>
-                                <span class="plus"><span class="plus_size">+</span><br>FT 101</span>
+                                <span class="plus"><span class="plusItem plusSize">+</span><span class="plusItem">FT 101</span></span>
+                        </div>
+                    </a>
+                    <a class="productLink" href="products/ft101.html">
+                        <div class="items" >
+                                <span class="title">Smart Thermostat</span>
+                                <br>
+                                <span class="description">SOON</span>
+                                <img src="images/productImages/image4.jpg" alt="Slicica" class="oneItem">
+                                
+                                <span class="oneItem"> LEARN MORE ></span>
+                                <span class="plus"><span class="plusItem plusSize">+</span><span class="plusItem">FT 101</span></span>
                         </div>
                     </a>
                 </div>
